@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Side by Side</title>
+    <style>
+        /* Style to make images inline-block and give them some margin */
+        .side-by-side-images img {
+            display: inline-block;
+            margin-right: 10px;
+            /* Adjust the margin as needed */
+        }
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+/* Clear floats after image containers */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="row">
+    <div class="column">
+        <h2>Follow</h2>
+        <ul class="icons">
+            <li><a href="https://www.linkedin.com/in/coding-brigade-bvrit-402634229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
+            <li><a href="https://www.instagram.com/coding_brigade/" class="icon brands style2 fa-instagram"><span
+                        class="label">Instagram</span></a></li>
+            <li><a href="https://x.com/CBB_BVRIT?s=08" class="icon brands style2 fa-twitter"><span
+                        class="label">Dribbble</span></a></li>
+        </ul>
+    </div>
+    <div class="column">
+        <img src="./images/college front view.jpeg" height="350" width="100" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="./images/TS1.jpeg"  height="350" width="100" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="./images/mun.jpeg"  height="350" width="100" alt="Mountains" style="width:100%">
+    </div>
+</div>
+</body>
+
+</html>
